@@ -1,10 +1,10 @@
 import mongoose, { Schema, Document } from "mongoose";
 
-export interface IUser extends Documents {
+export interface IUser extends Document {
     clerkId: string;
     name: string;
     email: string;
-    avatar?: string;
+    avatar: string;
     createdAt: Date;
     updatedAt: Date;
 }
